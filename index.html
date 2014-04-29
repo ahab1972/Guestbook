@@ -124,6 +124,12 @@ label.ss-q-help, td.ss-scalenumbers, td.ss-scalerow, td.ss-leftlabel, td.ss-righ
   color: #6e6a5e;
 }
 
+label.error {
+	display: list-item;
+	color: #ff0600;
+	font-size: 12px;
+	list-style-position: inside;
+	padding: 5px 0 0;}
 </style>
 
 
@@ -142,6 +148,18 @@ label.ss-q-help, td.ss-scalenumbers, td.ss-scalerow, td.ss-leftlabel, td.ss-righ
 <link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/a/systemvaruhuset.se/forms/d/18GKEOPY_cnnjciI9y8wVlanAllPlqfsYW9p9nbLBww0/oembed?url=https://docs.google.com/forms/d/18GKEOPY_cnnjciI9y8wVlanAllPlqfsYW9p9nbLBww0/viewform&amp;format=xml">
 <meta name="viewport" content="width=device-width">
 <meta property="og:title" content="Fair Guest Book"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/18GKEOPY_cnnjciI9y8wVlanAllPlqfsYW9p9nbLBww0/viewform"><meta property="og:image" content="https://ssl.gstatic.com/docs/forms/social/social-forms.png"><meta property="og:image:width" content="90"><meta property="og:image:height" content="90"><meta property="og:description" content="Guest book to be used in the pavillion at the fair, requires internet connection">
+
+
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="/js/jquery.validate.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#commentForm").validate({meta: "validate"});
+});
+</script>
+
 </head>
 <body dir="ltr" class="ss-base-body">
 	<div itemscope itemtype="http://schema.org/CreativeWork/FormObject">
@@ -195,12 +213,12 @@ label.ss-q-help, td.ss-scalenumbers, td.ss-scalerow, td.ss-leftlabel, td.ss-righ
 										name="entry.1793233659" 
 										size="50"
 										value="" 
-										class="ss-q-short" 
+										class="ss-q-short required" 
 										id="entry_1793233659" 
 										dir="auto" 
 										aria-label="What is your name" 
 										aria-required="true" 
-										title="" 
+										title="Name is a mandatory field" 
 										placeholder="FirstName LastName"
 										required>
 									<div class="error-message"></div>									
@@ -220,12 +238,12 @@ label.ss-q-help, td.ss-scalenumbers, td.ss-scalerow, td.ss-leftlabel, td.ss-righ
 										name="entry.93919829" 
 										size="50" 
 										value="" 
-										class="ss-q-short" 
+										class="ss-q-short required" 
 										id="entry_93919829" 
 										dir="auto" aria-label="Where do you come from?" 
 										aria-required="true" 
 										required="" 
-										title="" 
+										title="This is a mandatory field" 
 										placeholder="Abu Dhabi, UAE">
 									<div class="error-message"></div>									
 								</div>
@@ -243,12 +261,13 @@ label.ss-q-help, td.ss-scalenumbers, td.ss-scalerow, td.ss-leftlabel, td.ss-righ
 									<textarea name="entry.1763114368" 
 										rows="8" 
 										cols ="50" 
-										class="ss-q-long" 
+										class="ss-q-long required"
 										id="entry_1763114368" 
 										dir="auto" 
 										aria-label="What do you think about Sweden?" 
 										aria-required="true" 
 										required="" 
+										title="You forget your message!"
 										placeholder="What do you think about Sweden and Swedes, about the pavilion?"></textarea>
 									<div class="error-message"></div>									
 								</div>
