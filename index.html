@@ -20,14 +20,14 @@
 		}
 	input, select, textarea {
 			font-family: Tahoma,Arial,serif;
-			font-size: 13px;
+			font-size: 20px;
 		}
 body.ss-base-body {
 }
 	div.ss-form-container {
 			border: 1px solid #fb9d54;
 			border-width: 0 1px;
-			font-size: 16px;
+			font-size: 20px;
 			line-height: 24px;
 			margin: 0 auto;
 			max-width: 800px;
@@ -162,7 +162,23 @@ label.ss-q-help, td.ss-scalenumbers, td.ss-scalerow, td.ss-leftlabel, td.ss-righ
 				</div>
 			</div>
 			<div class="ss-form">
-				<form action="https://docs.google.com/a/systemvaruhuset.se/forms/d/18GKEOPY_cnnjciI9y8wVlanAllPlqfsYW9p9nbLBww0/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+			
+				<!-- Updated form action -->
+				<script type="text/javascript">var submitted=false;</script>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+				<form action="https://docs.google.com/a/systemvaruhuset.se/forms/d/1hI-dV1Nn_o9mR-ideglIbbS9MpWkXrWwLMszw19s8RM/formResponse" 
+					method="post"
+					target="hidden_iframe" 			
+					id="commentForm"
+					onsubmit="submitted=true;">
+			
+				<!-- Old form action 
+				<form action="https://docs.google.com/a/systemvaruhuset.se/forms/d/18GKEOPY_cnnjciI9y8wVlanAllPlqfsYW9p9nbLBww0/formResponse" 
+					method="POST" 
+					id="ss-form" 
+					target="_self" 
+					onsubmit="">  -->
+					
 					<ol role="list" class="ss-question-list" style="padding-left: 0">
 						<div class="ss-form-question errorbox-good" role="listitem">
 							<div dir="ltr" class="ss-item ss-item-required ss-text">
@@ -239,9 +255,9 @@ label.ss-q-help, td.ss-scalenumbers, td.ss-scalerow, td.ss-leftlabel, td.ss-righ
 						<div class="errorbox-good" role="listitem">
 							<div dir="ltr" class="ss-item  ss-embeddable-object-container">
 								<div class="ss-form-entry">
-									<h2 class="ss-q-title">Come visit us!</h2>
+									<h2 class="ss-q-title"></h2>
 									<div style="text-align: center;">
-										<img class="ss-image" title="" src="travel.jpg" style="" alt="On your way to Sweden">
+										
 									</div>
 								</div>
 							</div>
